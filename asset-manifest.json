@@ -1,9 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.964a1dff.css",
-    "main.js": "/static/js/main.bb7c6dbe.js",
+    "main.css": "/static/css/main.cc469a6c.css",
+    "main.js": "/static/js/main.320de88d.js",
     "static/media/graph2.png": "/static/media/graph2.ca1fdb24ad36b4ed68d0.png",
+    "static/media/t4.png": "/static/media/t4.4bf1dba89e4bc2788147.png",
     "static/media/head.png": "/static/media/head.f18919253f17275933ec.png",
+    "static/media/t3.png": "/static/media/t3.1b3d1d25fe93bd142196.png",
+    "static/media/t1.png": "/static/media/t1.fb710a5c2d00c254c55e.png",
+    "static/media/t2.png": "/static/media/t2.5f50458c2662f31bfb7c.png",
+    "static/media/face.png": "/static/media/face.3eb242886bd73d25921f.png",
     "static/media/graph1.png": "/static/media/graph1.8ad5d88539375ca7caef.png",
     "static/media/vflag.png": "/static/media/vflag.cd4696a8a34a78962360.png",
     "static/media/astrodogeT2.png": "/static/media/astrodogeT2.e3e9f858c8eb1619cf8a.png",
@@ -13,11 +18,11 @@
     "static/media/panda.png": "/static/media/panda.3bd6b51d10e3d5a2fa50.png",
     "index.html": "/index.html",
     "static/media/twitter.svg": "/static/media/twitter.88145f5a5efc189af7c91e0ba0dede8e.svg",
-    "main.964a1dff.css.map": "/static/css/main.964a1dff.css.map",
-    "main.bb7c6dbe.js.map": "/static/js/main.bb7c6dbe.js.map"
+    "main.cc469a6c.css.map": "/static/css/main.cc469a6c.css.map",
+    "main.320de88d.js.map": "/static/js/main.320de88d.js.map"
   },
   "entrypoints": [
-    "static/css/main.964a1dff.css",
-    "static/js/main.bb7c6dbe.js"
+    "static/css/main.cc469a6c.css",
+    "static/js/main.320de88d.js"
   ]
 }
