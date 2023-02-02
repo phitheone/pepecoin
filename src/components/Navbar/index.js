@@ -82,8 +82,8 @@ const Navbar = () => {
         </div> */}
         <div className="NavButtons">
           <a
-          //href=""
-          //target="_blank"
+          href="https://arbitrump-nodes.vercel.app/"
+          target="_blank"
           >
             <div className="NavAppBtn">
               <img src={face} /> <p>LAUNCH APP</p>
