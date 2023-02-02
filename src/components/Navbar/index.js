@@ -3,13 +3,13 @@ import "./Navbar.css";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { useNavigate } from "react-router-dom";
 
-import logoM from "../../images/logoh.png";
-import logoD from "../../images/discord.svg";
+import logoD from "../../images/logotelegram.png";
 import logoT from "../../images/twitter.svg";
-import logoS from "../../images/scroll.png";
+import logoS from "../../images/panda.png";
 import hamburger from "../../images/hamburger.png";
 import close from "../../images/close-button.png";
 import dc from "../../images/head.png";
+import face from "../../images/face.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,7 +30,7 @@ const Navbar = () => {
     <div className="NavSuper">
       <div className="NavContainer">
         <div className="Logo">
-          <Link
+          {/* <Link
             to="hero"
             smooth={true}
             duration={700}
@@ -38,10 +38,11 @@ const Navbar = () => {
             exact="true"
             offset={-74}
           >
-            <img src={logoM} />
-          </Link>
+            
+          </Link> */}
+          <img src={dc} />
         </div>
-        <div className="Links">
+        {/* <div className="Links">
           <div className="NavLink">
             <Link
               to="about1"
@@ -78,14 +79,14 @@ const Navbar = () => {
               <p>Roadmap</p>
             </Link>
           </div>
-        </div>
+        </div> */}
         <div className="NavButtons">
           <a
-            href="https://raydium.io/swap?inputCurrency=sol&outputCurrency=3DbnknoW4iRJomgF2Vv1iuLa1Qc6jasKAFLeVL9Dag3B&outputSymbol=Astro&fixed=in"
-            target="_blank"
+          //href=""
+          //target="_blank"
           >
-            <div className="NavBuyBtn">
-              <img src={dc} /> BUY $ASTRO
+            <div className="NavAppBtn">
+              <img src={face} /> <p>LAUNCH APP</p>
             </div>
           </a>
         </div>
@@ -105,17 +106,20 @@ const Navbar = () => {
           </a>
         </div> */}
         <div className="Wide Socials">
-          <a href="https://twitter.com/AstroBonk" target="_blank">
+          <a href="https://twitter.com/ArbiTrumpToken" target="_blank">
             <img src={logoT} />
           </a>
-          <a href="https://discord.gg/astrobonk" target="_blank">
+
+          <a href="https://t.me/ArbiTrumpP" target="_blank">
             <img src={logoD} />
           </a>
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdC-4drcl7Ng2Rz2egmBQUA7slhOabjU37LSYwTIU6vHHOnhA/viewform"
-            target="_blank"
+          //href=""
+          //target="_blank"
           >
-            <img src={logoS} />
+            <div className="NavBuyBtn">
+              <img src={face} /> <p>BUY $Trump</p>
+            </div>
           </a>
           {/* <div className="MintBtn">
             <a href="https://dqw4w9wgxcq.projectzora.xyz/">
@@ -127,13 +131,13 @@ const Navbar = () => {
             </a>
           </div> */}
         </div>
-        <div className="Movil">
+        {/* <div className="Movil">
           <button className="NavBtn" onClick={() => openMenu()}>
             <img src={menuImg} height="25" />
           </button>
-        </div>
+        </div> */}
       </div>
-      <div className={"NavPanel-" + (isMenuOpen ? "Open" : "Closed")}>
+      {/* <div className={"NavPanel-" + (isMenuOpen ? "Open" : "Closed")}>
         <div className="PanelLinks">
           <Link
             to="about1"
@@ -191,7 +195,7 @@ const Navbar = () => {
             <img src={logoS} height="40" />
           </a>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

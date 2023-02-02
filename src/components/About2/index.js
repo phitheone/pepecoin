@@ -2,6 +2,7 @@ import React from "react";
 import "./About2.css";
 
 import foto from "../../images/head.png";
+import title from "../../images/title.png";
 
 const About2 = () => {
   return (
@@ -11,23 +12,29 @@ const About2 = () => {
           <img src={foto} />
         </div>
         <div className="A2Right">
-          <h1>Astro Bonk</h1>
+          {/* <h1>
+            Arbi<span>trump</span>
+          </h1>
           <h2 className="H2Span">
-            The first <span>Real</span> Astronaut on Solana
-          </h2>
-          <p>
-            Missed <span>Bonk</span>? Join <span>Astro Bonk</span>!
-            <br />
-            <br />
-            🟢 Experienced team
-            <br />
-            🟢 Long term vision
-            <br />
-            <br />
-            Astro Bonk is the token that <span>will carry you</span> to the moon
-            on the <span>Solana</span> network. Latest <span>Bonk</span>{" "}
-            projects were mooning and had a lot of exposure.
-          </p>
+            Lets make <span>Arbitrum</span> great again!
+          </h2> */}
+          <img src={title} alt="" />
+          <div className="DarkSquare">
+            <p>
+              Do you want to get on the <span>Arbitrum</span> road to success?
+              Join <span>Arbitrump</span>!
+              <br />
+              <br />
+              💵 Experienced team
+              <br />
+              💵 Long term vision
+              <br />
+              <br />
+              Arbitrump is the token that will <span>build a wall</span> to
+              protect your financial situation. Make a great invesment on the
+              new <span>Arbitrum</span> ecosystem.
+            </p>
+          </div>
         </div>
       </div>
     </div>

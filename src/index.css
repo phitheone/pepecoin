@@ -1,17 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
 
 /* font-family: 'Open Sans', sans-serif; */
 
 body {
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lora", serif;
   /*colors*/
   --bg-main: rgb(224, 224, 224);
   --bg-main2: rgb(178, 178, 178);
-  --bg-secondary: #fff835;
+  --bg-secondary: #e1e1e1;
 
-  --text-main: #257828;
-  --text-focus: #ca9822;
+  --text-main: #252a90;
+  --text-focus: #ca2222;
   --text-secondary: white;
 }
 

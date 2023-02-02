@@ -1,21 +1,30 @@
 .NavSuper {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   font-size: 18px;
+  width: 150px;
+  height: 100vh;
+  border-left: solid #ffffff 4px;
   /* color: wheat; */
-  background: linear-gradient(to right, var(--bg-main), var(--bg-secondary));
+  background: linear-gradient(to right, #22681a, #339a27);
+  background-image: url("../../images/vflag.png");
+  background-position: center;
 
-  position: sticky;
+  position: fixed;
   top: 0;
+  right: 0;
   z-index: 20;
 }
 
 .NavContainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 75%;
+  height: 100%;
 
   /* border: 1px solid rgb(255, 255, 255); */
 }
@@ -25,7 +34,7 @@
 }
 
 .Logo img {
-  height: 40px;
+  height: 150px;
   cursor: pointer;
 }
 
@@ -62,10 +71,10 @@
 
 .Socials {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 170px;
+  height: 170px;
 
   /* border: 1px solid greenyellow; */
 }
@@ -82,17 +91,26 @@
 .Socials img:hover {
   transition: 0.3s ease-in-out;
   transform: scale(1.1);
-  filter: invert(50%) sepia(100%) hue-rotate(170deg) saturate(10);
+  /* filter: invert(50%) sepia(100%) hue-rotate(170deg) saturate(10); */
 }
 
 .NavButtons {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .NavBuyBtn img {
-  height: 25px;
+  position: absolute;
+  height: 50px;
   margin-right: 10px;
+}
+
+.NavBuyBtn p {
+  font-size: 15px;
+  z-index: 10;
+  text-shadow: 0 0 4px rgb(255, 255, 255), 0 0 4px rgb(255, 255, 255),
+    0 0 4px rgb(255, 255, 255);
+  text-align: center;
 }
 
 .NavBuyBtnGray img {
@@ -105,15 +123,18 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  background: var(--bg-main);
-  border: solid var(--text-main) 2px;
-  border-radius: 2rem;
+  width: 50px;
+  height: 50px;
+  background: white;
+  border: solid var(--text-main) 4px;
+  border-radius: 50px;
   padding: 10px 10px;
   margin-right: 10px;
-  color: var(--text-main);
+  color: var(--text-focus);
   font-weight: bold;
   cursor: pointer;
   transition: ease-in-out 0.3s;
+  z-index: 30;
 }
 
 .NavBuyBtnGray {
@@ -132,9 +153,66 @@
 }
 
 .NavBuyBtn:hover {
-  background: var(--bg-secondary);
-  border: solid var(--bg-main) 2px;
-  color: var(--bg-main);
+  background: white;
+  border: solid var(--text-focus) 4px;
+  color: var(--text-main);
+  transform: scale(1.1);
+}
+
+.NavAppBtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 50px;
+  /* background: white; */
+  border: solid goldenrod 4px;
+  border-radius: 7px;
+  padding: 10px 10px;
+  margin-right: 10px;
+  color: var(--text-main);
+  font-weight: bold;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+  animation: launchani 10s infinite ease-in-out;
+}
+
+@keyframes launchani {
+  0% {
+    /* border: solid black 4px; */
+    /* color: var(--text-main); */
+    background: white;
+  }
+  33% {
+    /* border: solid black 4px; */
+    /* color: var(--text-main); */
+    background: var(--text-main);
+  }
+  66% {
+    /* border: solid black 4px; */
+    /* color: var(--text-focus); */
+    background: var(--text-focus);
+  }
+  100% {
+    /* border: solid black 4px; */
+    /* color: var(--text-main); */
+    background: white;
+  }
+}
+
+.NavAppBtn img {
+  position: absolute;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.NavAppBtn p {
+  font-size: 25px;
+  z-index: 10;
+  text-shadow: 0 0 4px rgb(255, 255, 255), 0 0 4px rgb(255, 255, 255),
+    0 0 4px rgb(255, 255, 255);
+  text-align: center;
 }
 
 .Movil {
@@ -160,30 +238,6 @@
 /*=========== Media Queries ===========*/
 
 @media screen and (max-width: 1200px) {
-  .NavContainer {
-    width: 90%;
-    justify-content: space-between;
-
-    /* border: 1px solid greenyellow; */
-  }
-
-  .NavBuyBtn img {
-    width: 0px;
-    padding: 0px;
-    margin: 0px;
-    opacity: 0;
-    pointer-events: none;
-  }
-
-  .NavBuyBtnGray {
-    font-size: 11px;
-    padding: 0px 20px;
-  }
-
-  .NavBuyBtn {
-    font-size: 11px;
-    padding: 0px 20px;
-  }
 }
 
 @media screen and (max-width: 850px) {

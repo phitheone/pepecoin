@@ -4,12 +4,18 @@
   align-items: center;
   justify-content: center;
   /* background-image: linear-gradient(
-    to right,
-    var(--text-main),
-    var(--bg-secondary)
+    to bottom right,
+    var(--text-focus),
+    var(--text-focus),
+    #ffffff,
+    #2535a9,
+    #2535a9
   ); */
-  background-color: var(--text-focus);
-  border-bottom: solid var(--text-main) 6px;
+  /* background-color: var(--text-focus); */
+  background-image: url("../../images/bg1.png");
+  background-position: center;
+  border-bottom: solid #ffffff 6px;
+  margin-right: 150px;
 }
 
 .A2Container {
@@ -33,35 +39,52 @@
 .A2Right p {
   /* text-shadow: 0 0 5px rgb(255, 255, 255); */
   font-weight: bolder;
+  font-size: 18px;
   color: white;
-  text-shadow: 0 0 7px rgb(0, 0, 0), 0 0 15px rgb(0, 0, 0);
+  text-shadow: 0 0 4px rgb(0, 0, 0), 0 0 4px rgb(0, 0, 0), 0 0 4px rgb(0, 0, 0);
 }
 
 .A2Right span {
-  color: var(--bg-secondary);
+  color: #ba1616;
+  text-shadow: 0 0 4px rgb(255, 255, 255), 0 0 4px rgb(255, 255, 255),
+    0 0 4px rgb(255, 255, 255);
 }
 
 .A2Right h1 {
-  color: var(--bg-secondary);
+  color: #2535a9;
   font-weight: bolder;
-  font-size: 40px;
+  font-size: 50px;
   text-align: left;
   margin-bottom: 0px;
   padding: 0px 0px;
+  text-shadow: 0 0 4px rgb(255, 255, 255), 0 0 4px rgb(255, 255, 255),
+    0 0 4px rgb(255, 255, 255);
 }
 
 .A2Right h2 {
-  color: var(--bg-secondary);
+  color: #2535a9;
   margin: 0px;
   padding: 0px 0px;
   /* line-height: 20px; */
   font-weight: bolder;
-  font-size: 30px;
+  font-size: 40px;
   text-align: left;
+  text-shadow: 0 0 4px rgb(255, 255, 255), 0 0 4px rgb(255, 255, 255),
+    0 0 4px rgb(255, 255, 255);
 }
 
 .H2Span span {
-  color: white;
+  color: rgb(181, 24, 24);
+  text-shadow: 0 0 4px rgb(255, 255, 255), 0 0 4px rgb(255, 255, 255),
+    0 0 4px rgb(255, 255, 255);
+}
+
+.A2Right img {
+  width: 600px;
+}
+
+.DarkSquare {
+  /* background-color: rgba(0, 0, 0, 0.5); */
 }
 
 .A2Left {
@@ -74,52 +97,29 @@
 
 .A2Left img {
   height: 500px;
-  animation: infinite linear 3s;
+  animation: infinite ease-in-out 3s;
   animation-name: laugh;
 }
 
 @keyframes laugh {
   0% {
-    transform: translateY(0px);
+    width: 500px;
   }
-  12.5% {
-    transform: translateY(0px);
+  50% {
+    width: 0px;
   }
-  33% {
-    transform: translateY(0px);
-  }
-  35% {
-    transform: translateY(-10px);
-  }
-  37% {
-    transform: translateY(0px);
-  }
-  39% {
-    transform: translateY(-10px);
-  }
-  41% {
-    transform: translateY(0px);
-  }
-  66% {
-    transform: translateY(0px);
-  }
-  68% {
-    transform: translateY(-10px);
-  }
-  70% {
-    transform: translateY(0px);
-  }
-  72% {
-    transform: translateY(-10px);
-  }
-  74% {
-    transform: translateY(0px);
+  100% {
+    width: 500px;
   }
 }
 
 /*============Media Queries=============*/
 
 @media screen and (max-width: 1000px) {
+  .A2Super {
+    margin-right: 0px;
+  }
+
   .A2Container {
     width: 90%;
   }
@@ -136,8 +136,21 @@
   }
 
   .A2Left img {
-    width: 290px;
+    /* width: 290px; */
     height: 290px;
     padding-bottom: 2rem;
+    animation-name: laugh2;
+  }
+}
+
+@keyframes laugh2 {
+  0% {
+    width: 290px;
+  }
+  50% {
+    width: 0px;
+  }
+  100% {
+    width: 290px;
   }
 }

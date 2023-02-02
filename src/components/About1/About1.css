@@ -3,13 +3,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to right,
     var(--bg-secondary),
     var(--text-main)
-  );
+  ); */
+  background-color: rgb(20, 21, 92);
   background-position: center;
-  border-bottom: solid var(--text-main) 6px;
+  border-bottom: solid #ffffff 6px;
+  margin-right: 150px;
 }
 
 .A1Container {
@@ -21,10 +23,14 @@
   padding: 50px 0%;
 }
 
+.A1Top {
+  z-index: 30;
+}
+
 .A1Top h1 {
-  color: #ffb546;
+  color: #ffffff;
   font-size: 52px;
-  text-shadow: 0 0 7px rgb(0, 0, 0), 0 0 15px rgb(0, 0, 0);
+  text-shadow: 0 0 7px rgb(252, 27, 27), 0 0 15px rgb(246, 38, 38);
 }
 
 .A1Bottom {
@@ -44,10 +50,11 @@
   text-align: justify;
   flex: 1;
   color: black;
+  z-index: 20;
 }
 
 .A1Left img {
-  height: 450px;
+  height: 800px;
 }
 
 .A1Left span {
@@ -85,53 +92,99 @@
 }
 
 .A1Right {
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   flex: 1;
+  z-index: 10;
 }
 
 .A1Right img {
-  height: 500px;
-  animation: infinite linear 1s;
+  height: 1400px;
+  animation: infinite linear 4s;
   animation-name: jumpy;
 }
 
 @keyframes jumpy {
   0% {
-    rotate: 0deg;
-    transform: translateY(0px);
+    opacity: 0;
+    transform: translateY(0px) scale(0.1);
   }
-  12.5% {
-    transform: translateY(-2px);
+  8% {
+    opacity: 1;
+    transform: scale(1);
   }
-  25% {
-    rotate: 3deg;
-    transform: translateY(0px);
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  37.5% {
-    transform: translateY(-2px);
-  }
-  50% {
-    rotate: 0deg;
-    transform: translateY(0px);
-  }
-  62.5% {
-    transform: translateY(-2px);
-  }
-  75% {
-    rotate: -3deg;
-    transform: translateY(0px);
-  }
-  87.5% {
-    transform: translateY(-2px);
-  }
+}
+
+.A1Table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+}
+
+.A1Row {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* height: 300px; */
+}
+
+.A1Cell {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: top;
+  padding: 10px;
+  height: 300px;
+  width: 330px;
+  border: solid white 4px;
+}
+
+.A1Cell img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 150px;
+}
+
+.A1Cell h2 {
+  color: blue;
+  font-size: 28px;
+  text-shadow: 0 0 4px rgb(255, 255, 255), 0 0 4px rgb(255, 255, 255),
+    0 0 4px rgb(255, 255, 255);
+}
+
+.A1Cell p {
+  z-index: 20;
+  text-shadow: 0 0 4px rgb(0, 0, 0), 0 0 6px rgb(0, 0, 0), 0 0 8px rgb(0, 0, 0);
+}
+
+.A1Blue {
+  background: #4b4b76d5;
+}
+
+.A1Red {
+  background: #b22234d5;
 }
 
 /*============Media Queries=============*/
 
 @media screen and (max-width: 1000px) {
+  .A1Super {
+    margin-right: 0px;
+  }
+
   .A1Container {
     width: 90%;
   }

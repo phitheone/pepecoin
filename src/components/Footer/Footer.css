@@ -3,7 +3,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  /* background: rgb(20, 21, 92); */
   background: var(--text-focus);
+  margin-right: 150px;
 }
 
 .FooterContainer {
@@ -40,6 +42,7 @@
   justify-content: space-between;
   width: 150px;
   padding: 20px 0px;
+  z-index: 40;
 }
 
 .FooterSocials a {
@@ -48,11 +51,16 @@
 
 .FooterCR {
   font-size: 15px;
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: center;
 }
 
 /*==============Media Queries===============*/
+@media screen and (max-width: 1200px) {
+  .FooterSuper {
+    margin-right: 0px;
+  }
+}
 
 @media screen and (max-width: 700px) {
   .FooterCR {
