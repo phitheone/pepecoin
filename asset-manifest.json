@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.cc469a6c.css",
-    "main.js": "/static/js/main.37ed1e99.js",
+    "main.js": "/static/js/main.6575e6ad.js",
     "static/media/graph2.png": "/static/media/graph2.ca1fdb24ad36b4ed68d0.png",
     "static/media/t4.png": "/static/media/t4.4bf1dba89e4bc2788147.png",
     "static/media/head.png": "/static/media/head.f18919253f17275933ec.png",
@@ -17,12 +17,12 @@
     "static/media/logotelegram.png": "/static/media/logotelegram.6461e6f0ac6ea95504aa.png",
     "static/media/panda.png": "/static/media/panda.3bd6b51d10e3d5a2fa50.png",
     "index.html": "/index.html",
-    "static/media/twitter.svg": "/static/media/twitter.88145f5a5efc189af7c91e0ba0dede8e.svg",
+    "static/media/twitter.svg": "/static/media/twitter.7c5822ae33c1c6d24791e664582f7c29.svg",
     "main.cc469a6c.css.map": "/static/css/main.cc469a6c.css.map",
-    "main.37ed1e99.js.map": "/static/js/main.37ed1e99.js.map"
+    "main.6575e6ad.js.map": "/static/js/main.6575e6ad.js.map"
   },
   "entrypoints": [
     "static/css/main.cc469a6c.css",
-    "static/js/main.37ed1e99.js"
+    "static/js/main.6575e6ad.js"
   ]
 }
